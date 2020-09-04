@@ -19,42 +19,49 @@
 
 __________
 
-###Сборка клиента и сервера:
+### Сборка клиента и сервера:
 
-####Linux, Mac
+#### Linux, Mac
 
 ```chmod 700 ./build.sh
 ./build.sh
 ```
 
-####Windows
+#### Windows
 
 ```build.bat```
 
-###Запуск сервера и клиента:
-###Запустить сервер:
+### Запуск сервера и клиента:
+### Запустить сервер:
 
-####Linux, Mac
+#### Linux, Mac
+
 ```cd Server
-./Server```
+./Server
+```
 
-####Windows
+#### Windows
+
 ```cd Server
-Server.exe```
+Server.exe
+```
 
-###Запустить клиент:
+### Запустить клиент:
 
-####Linux, Mac
+#### Linux, Mac
 ```cd Client
-./Client```
+./Client
+```
 
-####Windows
+#### Windows
 ```cd Client
-Client.exe```
+Client.exe
+```
 
 ### Запуск тестов
 
-```go test -v server_test.go```
+```go test -v server_test.go
+```
 
 ### Конфигурация сервера:
 
@@ -62,7 +69,8 @@ Client.exe```
 "host": "127.0.0.1", адрес
 "port": "3000", порт
 "rooms": ["one", "two"] список комнат
-}```
+}
+```
 
 
 ### Конфигурация клиента:
@@ -71,7 +79,8 @@ Client.exe```
 "port": "3000", порт
 "username": "root", имя пользователя
 "rooms": ["one", "two"] список комнат
-}```
+}
+```
 
 
 ### Команды, доступные клиенту:
@@ -83,5 +92,5 @@ Client.exe```
 /hist room_name - получить историю сообщения для комнаты
 /unsub room_name - отписаться от комнаты
 /set_name name - установить имя пользователя
-/quit - отключиться от сервера```
-
+/quit - отключиться от сервера
+```
