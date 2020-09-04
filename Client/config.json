@@ -1,0 +1,9 @@
+{
+ "Host": "127.0.0.1",
+ "Port": "3000",
+ "Username": "root",
+ "Rooms": [
+  "one",
+  "two"
+ ]
+}
