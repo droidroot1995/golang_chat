@@ -23,49 +23,59 @@ __________
 
 #### Linux, Mac
 
-```chmod 700 ./build.sh
+```
+chmod 700 ./build.sh
 ./build.sh
 ```
 
 #### Windows
 
-```build.bat```
+```
+build.bat
+```
 
 ### Запуск сервера и клиента:
 ### Запустить сервер:
 
 #### Linux, Mac
 
-```cd Server
+```
+cd Server
 ./Server
 ```
 
 #### Windows
 
-```cd Server
+```
+cd Server
 Server.exe
 ```
 
 ### Запустить клиент:
 
 #### Linux, Mac
-```cd Client
+
+```
+cd Client
 ./Client
 ```
 
 #### Windows
-```cd Client
+```
+cd Client
 Client.exe
 ```
 
 ### Запуск тестов
 
-```go test -v server_test.go
+```
+go test -v server_test.go
 ```
 
 ### Конфигурация сервера:
 
-```{
+```
+{
 "host": "127.0.0.1", адрес
 "port": "3000", порт
 "rooms": ["one", "two"] список комнат
@@ -75,7 +85,9 @@ Client.exe
 
 ### Конфигурация клиента:
 
-```{"host": "127.0.0.1", адрес
+```
+{
+"host": "127.0.0.1", адрес
 "port": "3000", порт
 "username": "root", имя пользователя
 "rooms": ["one", "two"] список комнат
@@ -85,7 +97,8 @@ Client.exe
 
 ### Команды, доступные клиенту:
 
-```/sub room_name - подписаться на комнату
+```
+/sub room_name - подписаться на комнату
 /pub room_name msg - отправить сообщение в комнату
 /list - вывести список всех комнат
 /help - показать справку
